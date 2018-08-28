@@ -1,10 +1,10 @@
-import flask
+from flask import Flask
 
-app = flask(__name__)
+app = Flask(__name__)
 
-@app.route('/todo/api/v1.0/tasks', methods=['GET'])
-def get_tasks():
-    return "Hello"
+@app.route('/')
+def index():
+    return "Hello, World!"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
