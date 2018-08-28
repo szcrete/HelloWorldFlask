@@ -1,6 +1,6 @@
-import Flask
+import flask
 
-app = Flask(__name__)
+app = flask(__name__)
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
